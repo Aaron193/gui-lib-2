@@ -67,6 +67,4 @@ function GUI(settings) {
 		renderGui(settings);
 	}
 }
-if (typeof window !== 'undefined') {
-	window.EasyGUI = GUI;
-}
+export default GUI;

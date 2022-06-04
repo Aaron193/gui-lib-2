@@ -1,8 +1,15 @@
 {
 	"private": true,
-	"name": "gui-library",
+	"name": "easy-gui",
 	"version": "0.0.0",
 	"license": "MIT",
+	"description": "Easily create a graphical user interface (GUI) in your browser!",
+	"main": "gui.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Aaron193/gui-lib-2.git"
+	},
+	"author": "Aaron",
 	"scripts": {
 		"build": "preact build",
 		"serve": "sirv build --port 8080 --cors --single",

@@ -34,8 +34,12 @@ export function renderGui(settings) {
 	console.log('settings: ', settings);
 	if (settings?.components && settings?.title && settings?.width) {
 		console.log('rendering');
-		render(<App options={settings} />, document.querySelector('body'));
+		if (typeof window !== 'undefined') {
+			render(<App options={settings} />, document.querySelector('body'));
+		}
 	} else {
-		console.error('You did not pass the right parameters for this gui');
+		if (typeof window !== 'undefined') {
+			console.error('You did not pass the right parameters for this gui');
+		}
 	}
 }
