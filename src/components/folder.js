@@ -16,18 +16,21 @@ export function Folder(props) {
 		setDisplay(!display);
 	}
 
-	const innerComponents = props.components;
+	const innerComponents = props.content;
 	let comp = [];
 	innerComponents.forEach(item => {
 		switch (item.type) {
 			case Folder:
-				comp.push(<Folder components={item.props.components}></Folder>);
+			case 'folder':
+				comp.push(<Folder content={item.content}></Folder>);
 				break;
 			case Checkbox:
-				comp.push(<Checkbox change={e => sliderCallback(e)} name="jeff"></Checkbox>);
+			case 'checkbox':
+				comp.push(<Checkbox name={item.name} change={e => item.change(e)}></Checkbox>);
 				break;
 			case Slider:
-				comp.push(<Slider change={e => sliderCallback(e)} min="0" max="100" name="some range"></Slider>);
+			case 'slider':
+				comp.push(<Slider name={item.name} change={e => item.change(e)} min={item.opt.min} max={item.opt.max} step={item.opt.step}></Slider>);
 				break;
 		}
 	});

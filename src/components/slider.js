@@ -5,14 +5,14 @@ export function Slider(props) {
 
 	function handleChange(e) {
 		const value = e.target.value;
-		props.change(value);
+		props.change(Number(value));
 		setSliderValue(value);
 	}
 
 	return (
 		<div className="GUI_COMPONENT">
 			<label className="GUI_LABEL">{props.name}</label>
-			<input oninput={handleChange} className="GUI_SLIDER" type="range" min={props.min} max={props.max} />
+			<input oninput={handleChange} className="GUI_SLIDER" type="range" step={props.step} min={props.min} max={props.max} />
 			<input className="GUI_STATS" type="text" value={sliderValue} />
 		</div>
 	);
