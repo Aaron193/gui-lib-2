@@ -53,7 +53,7 @@ body {
 	padding-bottom: 25px;
 	height: unset;
 	right: 0px;
-	width: 540px;
+	/* width: 540px; */
 	background-color: black;
 }
 .__GUI__ input[type='range'] {

@@ -19,10 +19,11 @@ function App(props) {
 				break;
 		}
 	});
+	console.log(props.options.width);
 	return (
-		<div id="app">
-			<div className="__GUI__">
-				<div className="GUI_TITLE">MY GUI TITLE</div>
+		<div id="gui-app">
+			<div style={{ width: props.options.width + 'px' }} className="__GUI__">
+				<div className="GUI_TITLE">{props.options.title}</div>
 				{comp}
 			</div>
 		</div>

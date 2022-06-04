@@ -1,9 +1,10 @@
 !(function (n) {
-	var style = document.createTextNode(`@import url(https://fonts.googleapis.com/css2?family=Kanit&display=swap);:root{--slider-height:27px;--accent:#04aa6d}.GUI_TITLE{color:var(--accent);font-size:22px;font-weight:600;margin-bottom:15px;margin-top:5px;text-align:center}.GUI_ITEM_TITLE_CONTAINER{display:inline-block;margin-right:10px;width:40%}.GUI_LABEL{left:0;margin-right:2%;vertical-align:top;width:40%}.GUI_ITEM_TITLE,.GUI_LABEL{color:var(--accent);display:inline-block}.GUI_ITEM_TITLE{font-size:20px;vertical-align:sub}.__GUI__{background-color:#000;font-family:Kanit,sans-serif;height:unset;padding-bottom:25px;position:absolute;right:0;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:540px}.__GUI__ input[type=range]{-webkit-appearance:none;background:#101010;height:var(--slider-height);margin:0 15px;width:55%}.GUI_SLIDER::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;background:var(--accent);cursor:pointer;height:var(--slider-height);width:13px}.__GUI__ input[type=checkbox]{cursor:pointer;height:20px;margin:0;vertical-align:middle;width:20px}.GUI_STATS{background:#101010;border:none;color:var(--accent);height:26px;margin-right:10px;outline:none;text-align:center;width:13%}.GUI_COMPONENT{-ms-flex-align:center;align-items:center;border-bottom:2px solid #213e25;display:-ms-flexbox;display:flex;font-size:20px;margin-bottom:5px;margin-left:5px;padding:3px 0 3px 15px}.GUI_FOLDER{background-color:#11171b;border-left:2px solid var(--accent);box-sizing:border-box;color:#f0f0f0;display:block;margin-bottom:10px}.GUI_FOLDER,.GUI_FOLDER_TITLE{font-size:20px;margin-left:10px}.GUI_FOLDER_TITLE{border-bottom:2px solid #213e25;color:var(--accent);cursor:pointer;margin-right:10px;padding-left:15px}.GUI_FOLDER_TITLE:hover{background-color:hsla(0,0%,69%,.5);color:#000}.hide{display:none}input[type=checkbox]{-webkit-appearance:none;appearance:none;background-color:#101010;border:.15em solid var(--accent);border-radius:.15em;color:var(--accent);display:grid;font:inherit;height:1.15em;margin:0;place-content:center;-webkit-transform:translateY(-.075em);-ms-transform:translateY(-.075em);transform:translateY(-.075em);width:1.15em}input[type=checkbox]:before{box-shadow:inset 1em 1em var(--accent);-webkit-clip-path:polygon(14% 44%,0 65%,50% 100%,100% 16%,80% 0,43% 62%);clip-path:polygon(14% 44%,0 65%,50% 100%,100% 16%,80% 0,43% 62%);content:"";height:.65em;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transform-origin:bottom left;-ms-transform-origin:bottom left;transform-origin:bottom left;width:.65em}input[type=checkbox]:checked:before{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}`);
+	var style = document.createTextNode(`@import url(https://fonts.googleapis.com/css2?family=Kanit&display=swap);:root{--slider-height:27px;--accent:#04aa6d}.GUI_TITLE{color:var(--accent);font-size:22px;font-weight:600;margin-bottom:15px;margin-top:5px;text-align:center}.GUI_ITEM_TITLE_CONTAINER{display:inline-block;margin-right:10px;width:40%}.GUI_LABEL{left:0;margin-right:2%;vertical-align:top;width:40%}.GUI_ITEM_TITLE,.GUI_LABEL{color:var(--accent);display:inline-block}.GUI_ITEM_TITLE{font-size:20px;vertical-align:sub}.__GUI__{background-color:#000;font-family:Kanit,sans-serif;height:unset;padding-bottom:25px;position:absolute;right:0;-webkit-user-select:none;-ms-user-select:none;user-select:none}.__GUI__ input[type=range]{-webkit-appearance:none;background:#101010;height:var(--slider-height);margin:0 15px;width:55%}.GUI_SLIDER::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;background:var(--accent);cursor:pointer;height:var(--slider-height);width:13px}.__GUI__ input[type=checkbox]{cursor:pointer;height:20px;margin:0;vertical-align:middle;width:20px}.GUI_STATS{background:#101010;border:none;color:var(--accent);height:26px;margin-right:10px;outline:none;text-align:center;width:13%}.GUI_COMPONENT{-ms-flex-align:center;align-items:center;border-bottom:2px solid #213e25;display:-ms-flexbox;display:flex;font-size:20px;margin-bottom:5px;margin-left:5px;padding:3px 0 3px 15px}.GUI_FOLDER{background-color:#11171b;border-left:2px solid var(--accent);box-sizing:border-box;color:#f0f0f0;display:block;margin-bottom:10px}.GUI_FOLDER,.GUI_FOLDER_TITLE{font-size:20px;margin-left:10px}.GUI_FOLDER_TITLE{border-bottom:2px solid #213e25;color:var(--accent);cursor:pointer;margin-right:10px;padding-left:15px}.GUI_FOLDER_TITLE:hover{background-color:hsla(0,0%,69%,.5);color:#000}.hide{display:none}input[type=checkbox]{-webkit-appearance:none;appearance:none;background-color:#101010;border:.15em solid var(--accent);border-radius:.15em;color:var(--accent);display:grid;font:inherit;height:1.15em;margin:0;place-content:center;-webkit-transform:translateY(-.075em);-ms-transform:translateY(-.075em);transform:translateY(-.075em);width:1.15em}input[type=checkbox]:before{box-shadow:inset 1em 1em var(--accent);-webkit-clip-path:polygon(14% 44%,0 65%,50% 100%,100% 16%,80% 0,43% 62%);clip-path:polygon(14% 44%,0 65%,50% 100%,100% 16%,80% 0,43% 62%);content:"";height:.65em;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transform-origin:bottom left;-ms-transform-origin:bottom left;transform-origin:bottom left;width:.65em}input[type=checkbox]:checked:before{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}`);
 	var CSS = document.createElement('style');
 	CSS.type = 'text/css';
 	CSS.appendChild(style);
 	document.body.appendChild(CSS);
+
 	function e(o) {
 		if (t[o]) return t[o].exports;
 		var r = (t[o] = { i: o, l: !1, exports: {} });
@@ -500,7 +501,7 @@
 					(H = []),
 					n.some(function (n) {
 						var e, t, r, i, _, u;
-						n.__d && ((_ = (i = (e = n).__v).__e), (u = e.__P) && ((t = []), ((r = o({}, i)).__v = i.__v + 1), x(u, i, r, e.__n, void 0 !== u.ownerSVGElement, null != i.__h ? [_] : null, t, null == _ ? a(i) : _, i.__h), E(t, i), i.__e != _ && s(i)));
+						n.__d && ((_ = (i = (e = n).__v).__e), (u = e.__P) && ((t = []), ((r = o({}, i)).__v = i.__v + 1), x(u, i, r, e.__n, void 0 !== u.ownerSVGElement, null != i.__h ? [_] : null, t, null == _ ? a(i) : _, i.__h), C(t, i), i.__e != _ && s(i)));
 					});
 		}
 		function d(n, e, t, o, r, i, u, c, s, f) {
@@ -511,22 +512,22 @@
 				g,
 				b,
 				k,
-				E = (o && o.__k) || F,
-				C = E.length;
+				C = (o && o.__k) || F,
+				E = C.length;
 			for (t.__k = [], p = 0; p < e.length; p++)
 				if (null != (v = t.__k[p] = null == (v = e[p]) || 'boolean' == typeof v ? null : 'string' == typeof v || 'number' == typeof v || 'bigint' == typeof v ? _(null, v, null, null, v) : Array.isArray(v) ? _(l, { children: v }, null, null, null) : v.__b > 0 ? _(v.type, v.props, v.key, null, v.__v) : v)) {
-					if (((v.__ = t), (v.__b = t.__b + 1), null === (m = E[p]) || (m && v.key == m.key && v.type === m.type))) E[p] = void 0;
+					if (((v.__ = t), (v.__b = t.__b + 1), null === (m = C[p]) || (m && v.key == m.key && v.type === m.type))) C[p] = void 0;
 					else
-						for (d = 0; d < C; d++) {
-							if ((m = E[d]) && v.key == m.key && v.type === m.type) {
-								E[d] = void 0;
+						for (d = 0; d < E; d++) {
+							if ((m = C[d]) && v.key == m.key && v.type === m.type) {
+								C[d] = void 0;
 								break;
 							}
 							m = null;
 						}
-					x(n, v, (m = m || R), r, i, u, c, s, f), (g = v.__e), (d = v.ref) && m.ref != d && (k || (k = []), m.ref && k.push(m.ref, null, v), k.push(d, v.__c || g, v)), null != g ? (null == b && (b = g), 'function' == typeof v.type && v.__k === m.__k ? (v.__d = s = h(v, s, n)) : (s = y(n, v, m, E, g, s)), 'function' == typeof t.type && (t.__d = s)) : s && m.__e == s && s.parentNode != n && (s = a(m));
+					x(n, v, (m = m || R), r, i, u, c, s, f), (g = v.__e), (d = v.ref) && m.ref != d && (k || (k = []), m.ref && k.push(m.ref, null, v), k.push(d, v.__c || g, v)), null != g ? (null == b && (b = g), 'function' == typeof v.type && v.__k === m.__k ? (v.__d = s = h(v, s, n)) : (s = y(n, v, m, C, g, s)), 'function' == typeof t.type && (t.__d = s)) : s && m.__e == s && s.parentNode != n && (s = a(m));
 				}
-			for (t.__e = b, p = C; p--; ) null != E[p] && ('function' == typeof t.type && null != E[p].__e && E[p].__e == t.__d && (t.__d = a(o, p + 1)), A(E[p], E[p]));
+			for (t.__e = b, p = E; p--; ) null != C[p] && ('function' == typeof t.type && null != C[p].__e && C[p].__e == t.__d && (t.__d = a(o, p + 1)), w(C[p], C[p]));
 			if (k) for (p = 0; p < k.length; p++) S(k[p], k[++p], k[++p]);
 		}
 		function h(n, e, t) {
@@ -596,13 +597,13 @@
 				b,
 				k,
 				x,
-				E,
+				C,
 				S = e.type;
 			if (void 0 !== e.constructor) return null;
 			null != t.__h && ((s = t.__h), (a = e.__e = t.__e), (e.__h = null), (_ = [a])), (f = N.__b) && f(e);
 			try {
 				n: if ('function' == typeof S) {
-					if (((b = e.props), (k = (f = S.contextType) && r[f.__c]), (x = f ? (k ? k.props.value : f.__) : r), t.__c ? (g = (p = e.__c = t.__c).__ = p.__E) : ('prototype' in S && S.prototype.render ? (e.__c = p = new S(b, x)) : ((e.__c = p = new c(b, x)), (p.constructor = S), (p.render = T)), k && k.sub(p), (p.props = b), p.state || (p.state = {}), (p.context = x), (p.__n = r), (h = p.__d = !0), (p.__h = [])), null == p.__s && (p.__s = p.state), null != S.getDerivedStateFromProps && (p.__s == p.state && (p.__s = o({}, p.__s)), o(p.__s, S.getDerivedStateFromProps(b, p.__s))), (m = p.props), (y = p.state), h)) null == S.getDerivedStateFromProps && null != p.componentWillMount && p.componentWillMount(), null != p.componentDidMount && p.__h.push(p.componentDidMount);
+					if (((b = e.props), (k = (f = S.contextType) && r[f.__c]), (x = f ? (k ? k.props.value : f.__) : r), t.__c ? (g = (p = e.__c = t.__c).__ = p.__E) : ('prototype' in S && S.prototype.render ? (e.__c = p = new S(b, x)) : ((e.__c = p = new c(b, x)), (p.constructor = S), (p.render = A)), k && k.sub(p), (p.props = b), p.state || (p.state = {}), (p.context = x), (p.__n = r), (h = p.__d = !0), (p.__h = [])), null == p.__s && (p.__s = p.state), null != S.getDerivedStateFromProps && (p.__s == p.state && (p.__s = o({}, p.__s)), o(p.__s, S.getDerivedStateFromProps(b, p.__s))), (m = p.props), (y = p.state), h)) null == S.getDerivedStateFromProps && null != p.componentWillMount && p.componentWillMount(), null != p.componentDidMount && p.__h.push(p.componentDidMount);
 					else {
 						if ((null == S.getDerivedStateFromProps && b !== m && null != p.componentWillReceiveProps && p.componentWillReceiveProps(b, x), (!p.__e && null != p.shouldComponentUpdate && !1 === p.shouldComponentUpdate(b, p.__s, x)) || e.__v === t.__v)) {
 							(p.props = b),
@@ -623,14 +624,14 @@
 									p.componentDidUpdate(m, y, v);
 								});
 					}
-					(p.context = x), (p.props = b), (p.state = p.__s), (f = N.__r) && f(e), (p.__d = !1), (p.__v = e), (p.__P = n), (f = p.render(p.props, p.state, p.context)), (p.state = p.__s), null != p.getChildContext && (r = o(o({}, r), p.getChildContext())), h || null == p.getSnapshotBeforeUpdate || (v = p.getSnapshotBeforeUpdate(m, y)), (E = null != f && f.type === l && null == f.key ? f.props.children : f), d(n, Array.isArray(E) ? E : [E], e, t, r, i, _, u, a, s), (p.base = e.__e), (e.__h = null), p.__h.length && u.push(p), g && (p.__E = p.__ = null), (p.__e = !1);
-				} else null == _ && e.__v === t.__v ? ((e.__k = t.__k), (e.__e = t.__e)) : (e.__e = C(t.__e, e, t, r, i, _, u, s));
+					(p.context = x), (p.props = b), (p.state = p.__s), (f = N.__r) && f(e), (p.__d = !1), (p.__v = e), (p.__P = n), (f = p.render(p.props, p.state, p.context)), (p.state = p.__s), null != p.getChildContext && (r = o(o({}, r), p.getChildContext())), h || null == p.getSnapshotBeforeUpdate || (v = p.getSnapshotBeforeUpdate(m, y)), (C = null != f && f.type === l && null == f.key ? f.props.children : f), d(n, Array.isArray(C) ? C : [C], e, t, r, i, _, u, a, s), (p.base = e.__e), (e.__h = null), p.__h.length && u.push(p), g && (p.__E = p.__ = null), (p.__e = !1);
+				} else null == _ && e.__v === t.__v ? ((e.__k = t.__k), (e.__e = t.__e)) : (e.__e = E(t.__e, e, t, r, i, _, u, s));
 				(f = N.diffed) && f(e);
 			} catch (n) {
 				(e.__v = null), (s || null != _) && ((e.__e = a), (e.__h = !!s), (_[_.indexOf(a)] = null)), N.__e(n, e, t);
 			}
 		}
-		function E(n, e) {
+		function C(n, e) {
 			N.__c && N.__c(e, n),
 				n.some(function (e) {
 					try {
@@ -644,7 +645,7 @@
 					}
 				});
 		}
-		function C(n, e, t, o, i, _, u, l) {
+		function E(n, e, t, o, i, _, u, l) {
 			var c,
 				s,
 				f,
@@ -689,7 +690,7 @@
 				N.__e(n, t);
 			}
 		}
-		function A(n, e, t) {
+		function w(n, e, t) {
 			var o, i;
 			if ((N.unmount && N.unmount(n), (o = n.ref) && ((o.current && o.current !== n.__e) || S(o, null, e)), null != (o = n.__c))) {
 				if (o.componentWillUnmount)
@@ -700,18 +701,18 @@
 					}
 				o.base = o.__P = null;
 			}
-			if ((o = n.__k)) for (i = 0; i < o.length; i++) o[i] && A(o[i], e, 'function' != typeof n.type);
+			if ((o = n.__k)) for (i = 0; i < o.length; i++) o[i] && w(o[i], e, 'function' != typeof n.type);
 			t || null == n.__e || r(n.__e), (n.__e = n.__d = void 0);
 		}
-		function T(n, e, t) {
+		function A(n, e, t) {
 			return this.constructor(n, t);
 		}
-		function I(n, e, t) {
+		function T(n, e, t) {
 			var o, r, _;
-			N.__ && N.__(n, e), (r = (o = 'function' == typeof t) ? null : (t && t.__k) || e.__k), (_ = []), x(e, (n = ((!o && t) || e).__k = i(l, null, [n])), r || R, R, void 0 !== e.ownerSVGElement, !o && t ? [t] : r ? null : e.firstChild ? O.call(e.childNodes) : null, _, !o && t ? t : r ? r.__e : e.firstChild, o), E(_, n);
+			N.__ && N.__(n, e), (r = (o = 'function' == typeof t) ? null : (t && t.__k) || e.__k), (_ = []), x(e, (n = ((!o && t) || e).__k = i(l, null, [n])), r || R, R, void 0 !== e.ownerSVGElement, !o && t ? [t] : r ? null : e.firstChild ? O.call(e.childNodes) : null, _, !o && t ? t : r ? r.__e : e.firstChild, o), C(_, n);
 		}
-		function w(n, e) {
-			I(n, e, w);
+		function I(n, e) {
+			T(n, e, I);
 		}
 		function L(n, e, t) {
 			var r,
@@ -755,10 +756,10 @@
 		}
 		t.r(e),
 			t.d(e, 'render', function () {
-				return I;
+				return T;
 			}),
 			t.d(e, 'hydrate', function () {
-				return w;
+				return I;
 			}),
 			t.d(e, 'createElement', function () {
 				return i;
@@ -917,7 +918,8 @@
 									);
 						}
 					}),
-					n('div', { id: 'app' }, n('div', { className: '__GUI__' }, n('div', { className: 'GUI_TITLE' }, 'MY GUI TITLE'), t))
+					console.log(e.options.width),
+					n('div', { id: 'gui-app' }, n('div', { style: { width: e.options.width + 'px' }, className: '__GUI__' }, n('div', { className: 'GUI_TITLE' }, e.options.title), t))
 				);
 			}
 			function r(e) {
@@ -933,4 +935,4 @@
 		}.call(this, t('hosL').h));
 	},
 });
-//# sourceMappingURL=bundle.330d1.js.map
+//# sourceMappingURL=bundle.43df0.js.map
